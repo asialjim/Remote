@@ -1,0 +1,6 @@
+remote:
+  local:
+    arch: arm
+    enable: true
+    env: deft
+    primaries: netty
