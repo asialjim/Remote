@@ -226,7 +226,6 @@
                     <preparationGoals>
                         clean
                         versions:use-releases
-                        versions:update-parent
                         verify
                     </preparationGoals>
                 </configuration>
@@ -252,7 +251,6 @@
                         <id>pre-release-update</id>
                         <phase>validate</phase>
                         <goals>
-                            <goal>update-parent</goal>
                             <goal>update-child-modules</goal>
                         </goals>
                     </execution>
@@ -262,7 +260,6 @@
                         <!--suppress MybatisXMapperXmlInspection, MybatisPlusMapperXmlInspection, MavenModelInspection -->
                         <phase>post-release</phase>
                         <goals>
-                            <goal>update-parent</goal>
                             <goal>update-child-modules</goal>
                         </goals>
                     </execution>
